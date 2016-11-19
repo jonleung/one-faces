@@ -2,8 +2,22 @@ var NUM_IMAGES = 14;
 var BASE_PATH = "photos"
 var IMAGE_EXTENSION = ".png"
 
+// SMALL
 var IMAGE_WIDTH = 320;
 var IMAGE_HEIGHT = 180;
+
+// MEDIUM
+// var IMAGE_WIDTH = 640;
+// var IMAGE_HEIGHT = 360;
+//
+// LARGE
+// var IMAGE_WIDTH = 1280;
+// var IMAGE_HEIGHT = 720;
+
+
+
+
+
 
 var TRANSITION_DELAY = 400;
 
@@ -101,7 +115,7 @@ function showNextImage() {
 
 function setup() {
   // Create the Canvas
-  var cnv = createCanvas(IMAGE_WIDTH*2, IMAGE_HEIGHT);
+  var cnv = createCanvas(IMAGE_WIDTH*2, IMAGE_HEIGHT, "");
   cnv.parent('sketch');
 }
 
